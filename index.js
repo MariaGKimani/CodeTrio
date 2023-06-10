@@ -19,4 +19,24 @@ class Ankara {
   console.log(myAnkara.changeDesign(28, "happy")); 
   console.log(myAnkara.changeDesign(20, "sad")); 
   console.log(myAnkara.changeDesign(22, "excited")); 
+
+
+
+// question 2
+
+class Migration{
+    constructor(riverlevels,weatherpatterns){
+        this.riverlevels = riverlevels
+        this.weatherpatterns = weatherpatterns
+    }
+    predict_migrations(){
+        if(this.riverlevels === "low" && this.weatherpatterns === "dry"){
+            return "migration happens"
+        }else{
+            return "migration does not happen"
+        }
+    }
+}
+const migration1 = new  Migration("high","wet")
+console.log(migration1.predict_migrations());
   
