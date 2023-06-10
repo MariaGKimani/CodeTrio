@@ -14,7 +14,6 @@ class Ankara {
     }
   }
   
-  // Example usage
   const myAnkara = new Ankara("Vibrant Ankara");
   
   console.log(myAnkara.changeDesign(28, "happy")); 
