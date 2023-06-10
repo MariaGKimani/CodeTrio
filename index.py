@@ -1,9 +1,4 @@
-# You are a fashion designer known for your unique and 
-# vibrant Ankara designs recently you’ve discovered that some of your fabric
-# patterns change their designs based on the temperature and mood of the wearer 
-# you want to create a software application that can predict the changes in the fabric design 
-# given the mood and temperature data.
-# Think about the classes you will need to model the changing Ankara and how to predict the changes.
+# QUESTION 1
 
 class Ankara:
     def __init__(self,pattern):
@@ -22,12 +17,16 @@ class Ankara:
 ankara1 = Ankara("pattern")
 print(ankara1.change_temperature(25,2))
 
-# The Great Migration Forecast: Every year, millions of
-# wildebeest, zebras and other animals participate in 
-# the Great Migration across the Serengeti-Mara ecosystem.
-# As a conservationist you want to develop a software system
-# that models this migration, predicting the movement of the 
-# herds based on weather patterns, river levels, and 
-# predator locations. Consider what classes you’ll need 
-# to represent the animals, the environment, and the various factors that influence migration.
-
+# Question2
+class Migration:
+     def __init__(self,weather_patterns,river_levels):           
+                self.weather_patterns = weather_patterns
+                self.river_levels = river_levels
+     def predict_migrations(self):
+           if self.river_levels =="low" and self.weather_patterns =="dry":
+                 return f" migration happens"
+           else:
+                 return f"migration does not happen"
+           
+Migration1 =Migration("dry","low")
+print(Migration1.predict_migrations())
