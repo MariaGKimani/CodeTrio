@@ -30,7 +30,7 @@ class Migration{
         this.weatherpatterns = weatherpatterns
     }
     predict_migrations(){
-        if(this.riverlevels === "low" && this.weatherpatterns === "dry"){
+        if(this.riverlevels ===  "low" && this.weatherpatterns === "dry"){
             return "migration happens"
         }else{
             return "migration does not happen"
@@ -39,4 +39,27 @@ class Migration{
 }
 const migration1 = new  Migration("high","wet")
 console.log(migration1.predict_migrations());
-  
+
+
+
+// question 5
+
+class Drum{
+  constructor(material,size){
+    this.material = material
+    this.size = size
+  }
+  playSound(tone){
+    return sound
+  }
+}
+class Djembe extends Drum{
+  playSound(tone){
+    return `Djembe producer ${tone} when hit`
+  }
+}
+class Talkingdrum extends Drum{
+  playSound(tone){
+    return `Talkingdrum produces ${tone} when hit`
+  }
+}

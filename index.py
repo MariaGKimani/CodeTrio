@@ -30,3 +30,48 @@ class Migration:
            
 Migration1 =Migration("dry","low")
 print(Migration1.predict_migrations())
+
+
+# Question 3
+# class Movie:
+#       def __init__(self,title,schedule):
+#             self.title = title
+#             self.schedule = schedule
+#             self.budget = {}
+#             self.cast_members =[]
+#       def calculate_budget():
+#             if self.schedule == "premiere":
+      
+database =[]
+class Baobab:
+      def __init__(self,season,power,fruit):
+            self.season = season
+            self.power = power
+            self.fruit = fruit
+
+fruit1 = Baobab("wet","invisible","kiwi")
+fruit2 = Baobab("dry","fly","sweetmelon")
+database.extend(fruit1,fruit2)
+
+# class Season:
+#       def __init__(self,seasons):
+#             self.seasons = seasons
+
+#       def predict_fruit(self):
+#             for i in database:
+#                   if {self.seasons}==i.season:
+#                         print(f"{i.fruit} is produced during {self.seasons}")
+# s = Season("dry")
+# s.predict_fruit()
+      
+class Drum:
+     def __init__(self,sizes,material):
+          self.sizes = sizes
+          self.materials = material
+     def make_sound(self,sound):
+           return f"{sound}"
+           
+class Djembe extends Drum{
+      
+}
+      
